@@ -1,8 +1,9 @@
-from binance.client import Client
-import time
 import math
-import requests
 import os
+import time
+
+import requests
+from binance.client import Client
 
 firsttime = time.localtime()[3]*60+time.localtime()[4]
 
