@@ -82,7 +82,7 @@ def main ():
         cleanlisten()
         log = bicent()
         listenprice = []
-        clear = os.system('clear')
+        clear = os.system('cls')
 
         for i in log :
             for j in range(len(i)):
