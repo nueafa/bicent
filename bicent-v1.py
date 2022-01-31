@@ -18,14 +18,14 @@ def msgsend(text):
 print("#"*50)
 print(" "*15,"This is Bicent")
 print("#"*50)
-
+msgsend("init")
 api_key = 'g8bsSQqGYIZs9GHRlg7HRIkztUVYd6c1VsybpEsEySWkRLGYqczKKmFIeTQxlpdw'
 api_secret = 'RZmj3wwJxEri7alasQSjm0etB8H2bFQMbPthMJ822stDPRLK6Pi943vS1O3dSLA5'
 client = Client(api_key, api_secret)
 subpair = 'USDT'
 
 coinlist = [] 
-morelist = ['NEAR','BTC','SOL','XRP'] #what you want to listen + from your port
+morelist = ['GTC','NEAR','BTC','SOL','XRP'] #what you want to listen + from your port
 listenprice = []
 
 def cleanlisten():
@@ -76,9 +76,6 @@ def bicent():
         listenprice.append([j,fprice,lprice,((lprice-fprice)*100/fprice)])
         
     return listenprice 
-
-
-
 def main ():
     global firsttime
     global listenprice
